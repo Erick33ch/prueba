@@ -1,1 +1,33 @@
+package es.Studium.Practica1;
 
+public class TestColegio {
+
+	public static void main(String[] args) {
+		Colegio ingles = new Colegio (101, "Escuela de inglés", "Reyes Católicos, 14");
+		Colegio frances = new Colegio (102, "Escuela de francés", "Cristóbal Colón, 92");
+		
+		Asignatura ingb1 = new Asignatura (132, "Ingles B1", 6.0);
+		Asignatura ingb2 = new Asignatura (133, "Ingles B2", 8.0);
+		Asignatura frb1  = new Asignatura (134, "Frances B1", 6.0);
+		Asignatura frb2  = new Asignatura (135, "Frances B2", 8.0);
+		
+		Persona a = new Persona ("Ana Abel", "Paseo de América, 15", ingles, ingb1, 7.0);
+		Persona b = new Persona ("Benito Bueno", "Reyes Católicos, 16", ingles, ingb2, 6.0);
+		Persona c = new Persona ("Carmen Cano", "Reyes Católicos, 2", ingles, ingb1, 5.0);
+		Persona e = new Persona ("Esteban Escalera", "Isabel la Católica, 28", frances, frb1, 9);
+		Persona f = new Persona ("Francisco Farfán", "Cristóbal Colón, s/n", frances, frb2, 8.5);
+
+		System.out.println("La dirección de nuestra "+ingles.getNombre()+" es en "+ingles.getDireccion()+" y la dirección de nuestra "+frances.getNombre()+" es en "+frances.getDireccion());
+		System.out.println(c.getCentroMatriculado());
+		System.out.println(b.getNota());
+
+	}
+	package es.Studium.Practica1;
+
+	public class Colegio {
+		private	int idColegio;
+		private	String nombre;
+		private	String direccion;
+
+}
+wfwrwrfwrv
